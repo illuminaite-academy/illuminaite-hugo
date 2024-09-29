@@ -1,17 +1,21 @@
-//site color variables
-$body-color: #fff;
-$primary-color: #EAA4A4;
-$secondary-color: #ADD6D2;
-$text-color: #9D9EA5;
-$text-color-dark: #00113E;
-$site-ease: cubic-bezier(0.36, 0.03, 0, 0.91);
-$gray: #F7F9FF;
-$dark-gray: #646569;
+// Site color variables
+$body-color: #131313; // Dark background color
+$primary-color: #f48b8b; // Salmon color used throughout
+$secondary-color: #ca4949; // Used for headings
+$text-color: #fff5f5; // Light color used for most text
+$text-color-dark: #131313; // Dark color for contrast
+$site-ease: cubic-bezier(0.36, 0.03, 0, 0.91); // Kept from original
+$gray: #646569; // Adjusted to a darker shade
+$dark-gray: #131313; // Matches the dark background
 
-// solid colors
-$white: #fff;
-$black: #000;
+// Solid colors
+$white: #fff5f5; // Slightly off-white used throughout
+$black: #131313; // Very dark gray, almost black
 
-// Font Variables
-$primary-font: 'Josefin Sans', sans-serif;
-$secondary-font: 'Montserrat', sans-serif;
+// Accent colors
+$accent-red: #8b0000; // Dark red mentioned in comments
+$accent-light-red: #fc6445; // Used in gradients
+
+// Font Variables (updated from the original CSS)
+$primary-font: 'Karla', sans-serif;
+$secondary-font: 'Kumbh Sans', sans-serif;
