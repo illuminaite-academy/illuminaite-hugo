@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
 body{
   font-family: $primary-font;
   font-size: 16px;
-  color: $text-color;
+  color: $text-color-dark;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -14,11 +14,11 @@ h1, h2, h3, h4, h5, h6{
 
 p{
   font-size: 16px;
-  color: $text-color;
+  color: $text-color-dark;
 }
 
 h1{
-  font-size: 60px;
+  font-size: 95px;
 }
 
 h2{
