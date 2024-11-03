@@ -8,11 +8,12 @@
     &-thumb{
       img{
         width: 100%;
+        height: 100%;
       }
     }
     &-content{
       position: absolute;
-      background: $gray;
+      background: $black;
       width: 100%;
       padding: 45px 50px;
       bottom: 0;
@@ -161,7 +162,7 @@
         &.active{
           .page-link{
             background-color: $primary-color;
-            color: $white;
+            color: $dark-gray;
           }
         }
         &.disabled{
