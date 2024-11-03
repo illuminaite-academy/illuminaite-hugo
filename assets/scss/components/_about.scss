@@ -1,6 +1,9 @@
 .site-about{
   &-header{
     padding-top: 120px;
+    &:last-child {
+      padding-bottom: 50px;
+    }
     background-color: $black;
     @include mobile{
       padding-top: 60px;
