@@ -1,9 +1,9 @@
 .site-project{
-  padding: 0px 0;
+  padding: 120px 0;
   overflow: hidden;
   &-item{
     position: relative;
-    margin-bottom: 130px;
+    margin-bottom: 30px;
     transition: all 0.3s ease-in;
     &-thumb{
       img{
@@ -16,7 +16,7 @@
       background: $black;
       width: 100%;
       padding: 45px 50px;
-      bottom: -120px;
+      bottom: 0;
       transition: all .3s $site-ease;
       @include tablet{
         padding: 30px;
@@ -99,7 +99,7 @@
   }
   &-header{
     padding: 170px 0 100px;
-    background: $black;
+    background: $gray;
     @include tablet{
       padding: 120px 0 80px;
     }
@@ -155,19 +155,18 @@
           border-radius: 0;
           border: none;
           padding: 12px 20px;
-          background-color: $black;
-          color: $text-color;
+          color: $text-color-dark;
           font-weight: 300;
           transition: all 0.3s ease;
         }
         &.active{
           .page-link{
-            background-color: $black;
-            color: $text-color-dark;
+            background-color: $primary-color;
+            color: $dark-gray;
           }
         }
         &.disabled{
-          opacity: 0.5;
+          opacity: 0.3;
           cursor: not-allowed;
         }
       }
@@ -183,13 +182,7 @@
     h1{
       font-size: 40px;
       font-weight: 500;
-      margin-bottom: 20px;
-    }
-    h2{
-      font-size: 20px;
-      font-weight: 500;
       margin-bottom: 40px;
-      color: $text-color;
     }
     &-image{
       display: flex;
