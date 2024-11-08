@@ -1,4 +1,4 @@
-<!-- {{ define "main" }}
+{{ define "main" }}
 
 <section class="site-project-single-section">
   <div class="container">
@@ -8,6 +8,9 @@
           <h1>
             {{ .Title }}
           </h1>
+          <h2>
+            {{ .Date.Format "January 2, 2006" }}
+          </h2>
           <div class="site-project-single-description">
             {{ .Content }}
           </div>
@@ -24,7 +27,6 @@
                   Next Project
                 </span>
               </span>
-              <img src="{{ "images/to-top.svg" | absURL }}" alt="next project">
             </a>
           </div>
           {{ end }}
@@ -34,6 +36,4 @@
   </div>
 </section>
 
-{{ partial "call-to-action.html" . }}
-
-{{ end }} -->
+{{ end }}
