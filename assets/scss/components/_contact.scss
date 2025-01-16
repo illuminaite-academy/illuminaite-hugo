@@ -1,50 +1,58 @@
-.site-contact{
-  padding: 150px 0 100px;
-  background: $gray;
-  @include mobile{
-    padding: 120px 0 100px;
-  }
-  &-title{
-    font-weight: 700;
-    @include tablet{
-      font-size: 40px;
+.site-about{
+  &-header{
+    padding-top: 120px;
+    &:last-child {
+      padding-bottom: 50px;
     }
-    span{
-      color: $primary-color;
+    background-color: $black;
+    @include mobile{
+      padding-top: 60px;
+      text-align: center;
     }
   }
-  &-form{
-    margin-top: 20px;
-    h4{
-      font-weight: 300;
-      text-transform: uppercase;
-      margin-bottom: 50px;
-      letter-spacing: 3px;
-      @include tablet{
-        font-size: 20px;
-      }
-      @include desktop{
-        margin-bottom: 70px;
-      }
-    }
+  &-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
-}
-.contact-form-generator {
-  margin-top: 20px;
-    a{
-    color: $text-color-dark;
-    font-size: 13px;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    letter-spacing: 3px;
-    &:hover{
-      text-decoration: none;
-    }
-    @include tablet{
-      font-size: 20px;
-    }
+  &-company{
+    background: $black;
+    width: 40%;
+    padding: 70px 38px;
     @include desktop{
-      margin-bottom: 70px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    h1{
+      color: $white;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 60px;
+      letter-spacing: 1px;
+    }
+  }
+  &-description{
+    width: 60%;
+    padding-left: 50px;
+    @include desktop{
+      width: 100%;
+      padding: 0 38px;
+    }
+    h4{
+      color: $text-color;
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 0;
     }
   }
 }
