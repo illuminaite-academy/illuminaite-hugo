@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+
+<section class="site-hackathon-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img src="{{ .Params.banner_image }}" alt="Hackathon Banner">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-hackathon-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ .Params.hackathon_information }}</h2>
+        <h3>{{ .Params.theme }}</h3>
+        <p>{{ .Params.hackathon_description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-hackathon-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>{{ .Params.clubs_title }}</h2>
+
+          {{ range .Params.clubs }}
+          <div class="site-hackathon-club">
+            <div class="site-hackathon-club-name">
+              <img src="{{ .logo }}" alt="{{ .title }} Logo">
+              <h3>{{ .title }}</h3>
+            </div>
+            <p>{{ .description }}</p>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="site-hackathon-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Schedule</h2>
+                <img src="{{ .Params.adgenda_image }}" alt="Adgenda Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{ end }}

@@ -1,0 +1,33 @@
+.site-hackathon{
+    &-header{
+      padding-top: 120px;
+      &:last-child {
+        padding-bottom: 50px;
+      }
+      background-color: $black;
+      @include mobile{
+        padding-top: 60px;
+        text-align: center;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-signup{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-club{
+      margin-bottom: 40px;
+      img{
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
