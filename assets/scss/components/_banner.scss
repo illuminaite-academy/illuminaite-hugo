@@ -1,0 +1,11 @@
+.site-banner{
+    padding: 130px 0;
+    background-size: cover;
+    @include desktop{
+      padding: 100px 0;
+    }
+    &-image{
+        width: 100vw;
+        height: auto;
+    }
+}

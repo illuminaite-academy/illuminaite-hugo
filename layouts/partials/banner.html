@@ -1,0 +1,9 @@
+{{ with .Site.Params.event_banner }}
+  {{ if .enable }}
+  <section class="site-banner">
+        <a href="{{ .image_url | absURL }}" target="_blank">
+            <img src="{{ .image_source | absURL }}" alt="{{ .image_url }}" class="site-banner-image">
+        </a>
+  </section>
+  {{ end }}
+{{ end }}
