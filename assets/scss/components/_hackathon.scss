@@ -30,4 +30,44 @@
         height: 100px;
       }
     }
+    &-team-title{
+      margin-bottom: 40px;
+      margin-bottom: 70px;
+    @include desktop{
+        text-align: center;
+    }
+    h2{
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        @include desktop{
+        font-size: 40px;
+        }
+      }
+    }
   }
+
+.site-team-section {
+    margin-bottom: 50px;
+    
+    .site-hackathon-team-member {
+        background: $darker-gray;
+        padding: 60px 30px 10px;
+        margin: 50px 0 50px;
+        position: relative;
+        height: 300px;
+        @include tablet{
+      text-align: center;
+      height: fit-content;
+    }
+    }
+
+    .site-hackathon-team-title {
+        margin-bottom: 30px;
+        
+        h3 {
+            color: $white;
+            text-align: left;
+        }
+    }
+}
