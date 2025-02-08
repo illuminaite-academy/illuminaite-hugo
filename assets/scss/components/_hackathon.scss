@@ -1,0 +1,73 @@
+.site-hackathon{
+    &-header{
+      padding-top: 120px;
+      &:last-child {
+        padding-bottom: 50px;
+      }
+      background-color: $black;
+      @include mobile{
+        padding-top: 60px;
+        text-align: center;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-signup{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-club{
+      margin-bottom: 40px;
+      img{
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &-team-title{
+      margin-bottom: 40px;
+      margin-bottom: 70px;
+    @include desktop{
+        text-align: center;
+    }
+    h2{
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        @include desktop{
+        font-size: 40px;
+        }
+      }
+    }
+  }
+
+.site-team-section {
+    margin-bottom: 50px;
+    
+    .site-hackathon-team-member {
+        background: $darker-gray;
+        padding: 60px 30px 10px;
+        margin: 50px 0 50px;
+        position: relative;
+        height: 300px;
+        @include tablet{
+      text-align: center;
+      height: fit-content;
+    }
+    }
+
+    .site-hackathon-team-title {
+        margin-bottom: 30px;
+        
+        h3 {
+            color: $white;
+            text-align: left;
+        }
+    }
+}
