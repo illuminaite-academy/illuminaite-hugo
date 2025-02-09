@@ -16,7 +16,7 @@
     <div class="row">
       <div class="col-12">
         <h2>{{ .Params.hackathon_information }}</h2>
-        <h3>{{ .Params.theme }}</h3>
+        <h3>{{ .Params.theme | safeHTML }}</h3>
         <p>{{ .Params.hackathon_description | safeHTML }}</p>
       </div>
     </div>
