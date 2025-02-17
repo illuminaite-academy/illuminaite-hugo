@@ -41,6 +41,34 @@
 </ul>
 
 <section class="site-hackathon-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ .Params.guests_information }}</h2>
+        <p>{{ .Params.guests_description | safeHTML }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ul class="site-hero-content-buttons">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <li>
+        <a href="{{ .Params.guests_signup_link | absURL }}" class="btn btn-sm-rounded btn-primary">
+          <span class="btn-area">
+            <span data-text="Sign Up Now!">
+              Sign Up Now!
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</ul>
+
+<section class="site-hackathon-header">
     <div class="container">
       <div class="row">
         <div class="col-12">
